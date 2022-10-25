@@ -1,6 +1,6 @@
 const sentence = "hello there from lighthouse labs";
 
-function typeItOut() {
+const typeItOut = function() {
   let timer = 0;
   for (const i in sentence) {
     setTimeout(() => {
@@ -11,6 +11,6 @@ function typeItOut() {
     }, timer);
     timer += 50;
   }
-}
+};
 
 typeItOut();
